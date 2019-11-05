@@ -12,20 +12,21 @@
     rel="stylesheet">
   <script>
     var web = {
-
-      resize: function () {
-        if (window.innerWidth < 550) {
-          web.piotr.style.height = window.innerHeight + 'px';
-          web.ania.style.height = window.innerHeight + 'px';
-        } else {
-          web.piotr.style.height = '100vh';
-          web.ania.style.height = '100vh';
-        }
-      },
+      // ustawienie 100% wysokości na headarze powitalnym dla mobili
       init: function () {
-        web.piotr = document.getElementById('piotr_dev');
-        web.ania = document.getElementById('ania_dev');
-        window.addEventListener('resize', web.resize);
+        var hp = window.innerHeight // ile zajmuje strona w oknie telefonu
+        var hs = screen.height // wysokosc calego ekranu
+        var hb = hs - hp // wyokosc navbarow na stronie (gora i dol)
+        var piotr = document.getElementById('piotr_dev');
+        var ania = document.getElementById('ania_dev');
+        if (window.innerWidth < 550) {
+          piotr.style.height = window.innerHeight + 'px';
+          ania.style.height = window.innerHeight + 'px';
+        } else {
+          piotr.style.height = '100vh';
+          ania.style.height = '100vh';
+        }
+        // window.addEventListener('resize', web.resize);
       }
     }
 
