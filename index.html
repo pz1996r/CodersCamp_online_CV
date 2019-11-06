@@ -1,196 +1,252 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Hello we're develoopers</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:300,400,600|Pacifico&display=swap&subset=latin-ext"
-    rel="stylesheet">
-  <script>
-    var web = {
-      // ustawienie 100% wysokości na headarze powitalnym dla mobili
-      init: function () {
-        var hp = window.innerHeight // ile zajmuje strona w oknie telefonu
-        var hs = screen.height // wysokosc calego ekranu
-        var hb = hs - hp // wyokosc navbarow na stronie (gora i dol)
-        var piotr = document.getElementById('piotr_dev');
-        var ania = document.getElementById('ania_dev');
-        if (window.innerWidth < 550) {
-          piotr.style.height = window.innerHeight + 'px';
-          ania.style.height = window.innerHeight + 'px';
-        } else {
-          piotr.style.height = '100vh';
-          ania.style.height = '100vh';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hello we're develoopers</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:300,400,600|Pacifico&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <script>
+      var web = {
+        // ustawienie 100% wysokości na headarze powitalnym dla mobili
+        init: function() {
+          var hp = window.innerHeight; // ile zajmuje strona w oknie telefonu
+          var hs = screen.height; // wysokosc calego ekranu
+          var hb = hs - hp; // wyokosc navbarow na stronie (gora i dol)
+          var piotr = document.getElementById("piotr_dev");
+          var ania = document.getElementById("ania_dev");
+          if (window.innerWidth < 550) {
+            piotr.style.height = window.innerHeight + "px";
+            ania.style.height = window.innerHeight + "px";
+          } else {
+            piotr.style.height = "100vh";
+            ania.style.height = "100vh";
+          }
+          // window.addEventListener('resize', web.resize);
         }
-        // window.addEventListener('resize', web.resize);
-      }
-    }
+      };
+    </script>
+  </head>
 
-
-
-  </script>
-</head>
-
-<body onload="web.init()">
-  <div id="container">
-    <header>
-      <div id="piotr_dev">
-        <div id="welcome">
-          <img id='logo' src="img/logo.svg" alt="logo">
-          <p>czyli programistami, którzy nie stronią od nieszablonowych
-            rozwiązań. Dzięki dbałości zarówno okażdy detal projektu graficznego, jak ikodu, strony wykonane przez nas
-            wpadają w oko !</p>
-        </div>
-        <div class="head">
-          <div class="icons">
-            <a href="#"><img src="img/github.svg" alt="github_icon"></a>
-            <a href="#"><img src="img/linkedin.svg" alt="linkedin_icon"></a>
-            <a href="#"><img src="img/facebook.svg" alt="facebook_icon"></a>
-            <a href="#"><img src="img/instagram.svg" alt="instagram_icon"></a>
+  <body onload="web.init()">
+    <div id="container">
+      <header>
+        <div id="piotr_dev">
+          <div id="welcome">
+            <img id="logo" src="img/logo.svg" alt="logo" />
+            <p>
+              czyli programistami, którzy nie stronią od nieszablonowych
+              rozwiązań. Dzięki dbałości zarówno o każdy detal projektu
+              graficznego, jak i kodu, strony wykonane przez nas wpadają w oko !
+            </p>
           </div>
-          <img src="img/Piotrek-avatar.png" alt="Piotr_Developer_Avatar">
+          <div class="head">
+            <!-- Tutaj przydałoby się zrobić listę czyli coś takiego:             
+            <div class="icons">
+              <ul>
+                <li>
+                  <a href="#"><img src="img/github.svg" alt="github_icon"/></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="img/linkedin.svg" alt="linkedin_icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="img/facebook.svg" alt="facebook_icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="img/instagram.svg" alt="instagram_icon"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            -->
+            <div class="icons">
+              <a href="#"><img src="img/github.svg" alt="github_icon"/></a>
+              <a href="#"><img src="img/linkedin.svg" alt="linkedin_icon"/></a>
+              <a href="#"><img src="img/facebook.svg" alt="facebook_icon"/></a>
+              <a href="#"
+                ><img src="img/instagram.svg" alt="instagram_icon"
+              /></a>
+            </div>
+            <img src="img/Piotrek-avatar.png" alt="Piotr_Developer_Avatar" />
+          </div>
+
+          <div id="bottom_piotr"></div>
         </div>
-
-
-        <div id="bottom_piotr"></div>
-      </div>
-      <div id="ania_dev">
-        <div class="head">
-          <img src="img/ania-avatar.png" alt="Ania_Developer_Avatar">
-          <div class="icons">
-            <a href="#"><img src="img/github.svg" alt="github_icon"></a>
-            <a href="#"><img src="img/linkedin.svg" alt="linkedin_icon"></a>
-            <a href="#"><img src="img/facebook.svg" alt="facebook_icon"></a>
-            <a href="#"><img src="img/instagram.svg" alt="instagram_icon"></a>
+        <div id="ania_dev">
+          <div class="head">
+            <img src="img/ania-avatar.png" alt="Ania_Developer_Avatar" />
+            <div class="icons">
+              <a href="#"><img src="img/github.svg" alt="github_icon"/></a>
+              <a href="#"><img src="img/linkedin.svg" alt="linkedin_icon"/></a>
+              <a href="#"><img src="img/facebook.svg" alt="facebook_icon"/></a>
+              <a href="#"
+                ><img src="img/instagram.svg" alt="instagram_icon"
+              /></a>
+            </div>
+          </div>
+          <div id="bottom_ania">
+            <p>Jak wygląda współpraca z nami ?</p>
+            <div class="cont">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
           </div>
         </div>
-        <div id="bottom_ania">
-          <p>Jak wygląda współpraca z nami ?</p>
-          <div class="cont">
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section id="cooperation">
-      <div class="stage"><img src="img/creative-idea.svg" alt="first_stage_icon">
-        <p>Praca nad projektem, zaczyna się w trakcie rozmowy z klientem. Nawet jeżeli pozostałe elementy współpracy
-          zostaną wykonane na 110%, to nie da się nadrobić zaległości powstałych na etapie ustaleń. Dlatego do każdego z
-          etapów podchodzimy z jak największym zaangażowaniem. To właśnie na początku współpracy, staramy się zrozumieć
-          specyfikę działalności klienta, z którą on ma styczność na codzień. Dzięki zrozumieniu, łatwiej jest nam
-          zeozumieć podtrzeby klientów, a dzięki temu dostosować aplikację do ich potrzeb. W końcu prawdziwym klientem
-          jest użytkownik na końcu łańcucha korzystający z narzędzi które mu udostępnimy.</p>
-      </div>
-      <div class="stage"><img src="img/creativity.svg" alt="second_stage_icon">
-        <p>Praca nad projektem, zaczyna się w trakcie rozmowy z klientem. Nawet jeżeli pozostałe elementy współpracy
-          zostaną wykonane na 110%, to nie da się nadrobić zaległości powstałych na etapie ustaleń. Dlatego do każdego z
-          etapów podchodzimy z jak największym zaangażowaniem. To właśnie na początku współpracy, staramy się zrozumieć
-          specyfikę działalności klienta, z którą on ma styczność na codzień. Dzięki zrozumieniu, łatwiej jest nam
-          zeozumieć podtrzeby klientów, a dzięki temu dostosować aplikację do ich potrzeb. W końcu prawdziwym klientem
-          jest użytkownik na końcu łańcucha korzystający z narzędzi które mu udostępnimy.</p>
-      </div>
-      <div class="stage"><img src="img/web-programming.svg" alt="third_stage_icon">
-        <p>Praca nad projektem, zaczyna się w trakcie rozmowy z klientem. Nawet jeżeli pozostałe elementy współpracy
-          zostaną wyknoane na 110%, to nie da się nadrobić zaległości powstałych na etapie ustaleń. Dlatego do każdego z
-          etapów podchodzimy z jak największym zaangażowaniem. To właśnie na początku współpracy, staramy się zrozumieć
-          specyfikę działalności klienta, z którą on ma styczność na codzień. Dzięki zrozumieniu, łatwiej jest nam
-          zeozumieć podtrzeby klientów, a dzięki temu dostosować aplikację do ich potrzeb. W końcu prawdziwym klientem
-          jest użytkownik na końcu łańcucha korzystający z narzędzi które mu udostępnimy.</p>
-      </div>
-    </section>
-    <section id="about">
-      <h1>Team develoopers :</h1>
-      <div class="desc">
-        <div class="photo">
-          <img src="img/piotr_photo.png" alt="Piotrek_developer_photo">
-          <div class="cutter"></div>
-        </div>
-        <div class="presentation">
-          <h2>Piotr</h2>
-          <p>Cześć jestem Piotrek. Jestem web developerem, który swoją przygodę z programowaniem zaczął już w 2015 roku.
-            Można powiedzieć że jeżeli chodzi o programowanie to jestem samoukiem, ponieważ na samym początku mojej
-            przygody z branżą IT, jedynym źródłem wiedzy był internet.
-            To właśnie wtedy chciałem stworzyć swoją pierwszą stronę do nauki języków obcych. Jak to często bywa design
-            znacznie odbiegał od oczekiwań i choć nie byz zły jak na kogoś
-            kto stwaia pierwsze kroki w tej branży, to każdy kolejny był lepszy, przez co strony zamiast być publikowane
-            na serwerze trafiały do kosza.
-            Tak krok po kroku stworzyłem pare stron, aż do momentu wylądowania na studiach na których i tak praktycznie
-            musiałem się uczyć samodzenielnie, z tą różnicą że zaczałem korzystać z kurswów ...
+      </header>
+      <section id="cooperation">
+        <div class="stage">
+          <img src="img/creative-idea.svg" alt="first_stage_icon" />
+          <p>
+            Praca nad projektem, zaczyna się w trakcie rozmowy z klientem. Nawet
+            jeżeli pozostałe elementy współpracy zostaną wykonane na 110%, to
+            nie da się nadrobić zaległości powstałych na etapie ustaleń. Dlatego
+            do każdego z etapów podchodzimy z jak największym zaangażowaniem. To
+            właśnie na początku współpracy, staramy się zrozumieć specyfikę
+            działalności klienta, z którą on ma styczność na codzień. Dzięki
+            zrozumieniu, łatwiej jest nam zeozumieć podtrzeby klientów, a dzięki
+            temu dostosować aplikację do ich potrzeb. W końcu prawdziwym
+            klientem jest użytkownik na końcu łańcucha korzystający z narzędzi
+            które mu udostępnimy.
           </p>
-          <div class="btns">
-            <a href="mailto:pz1996@gmail.com">
+        </div>
+        <div class="stage">
+          <img src="img/creativity.svg" alt="second_stage_icon" />
+          <p>
+            Praca nad projektem, zaczyna się w trakcie rozmowy z klientem. Nawet
+            jeżeli pozostałe elementy współpracy zostaną wykonane na 110%, to
+            nie da się nadrobić zaległości powstałych na etapie ustaleń. Dlatego
+            do każdego z etapów podchodzimy z jak największym zaangażowaniem. To
+            właśnie na początku współpracy, staramy się zrozumieć specyfikę
+            działalności klienta, z którą on ma styczność na codzień. Dzięki
+            zrozumieniu, łatwiej jest nam zeozumieć podtrzeby klientów, a dzięki
+            temu dostosować aplikację do ich potrzeb. W końcu prawdziwym
+            klientem jest użytkownik na końcu łańcucha korzystający z narzędzi
+            które mu udostępnimy.
+          </p>
+        </div>
+        <div class="stage">
+          <img src="img/web-programming.svg" alt="third_stage_icon" />
+          <p>
+            Praca nad projektem, zaczyna się w trakcie rozmowy z klientem. Nawet
+            jeżeli pozostałe elementy współpracy zostaną wyknoane na 110%, to
+            nie da się nadrobić zaległości powstałych na etapie ustaleń. Dlatego
+            do każdego z etapów podchodzimy z jak największym zaangażowaniem. To
+            właśnie na początku współpracy, staramy się zrozumieć specyfikę
+            działalności klienta, z którą on ma styczność na codzień. Dzięki
+            zrozumieniu, łatwiej jest nam zeozumieć podtrzeby klientów, a dzięki
+            temu dostosować aplikację do ich potrzeb. W końcu prawdziwym
+            klientem jest użytkownik na końcu łańcucha korzystający z narzędzi
+            które mu udostępnimy.
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <h1>Team develoopers :</h1>
+        <div class="desc">
+          <div class="photo">
+            <img src="img/piotr_photo.png" alt="Piotrek_developer_photo" />
+            <div class="cutter"></div>
+          </div>
+          <div class="presentation">
+            <h2>Piotr</h2>
+            <p>
+              Cześć jestem Piotrek. Jestem web developerem, który swoją przygodę
+              z programowaniem zaczął już w 2015 roku. Można powiedzieć że
+              jeżeli chodzi o programowanie to jestem samoukiem, ponieważ na
+              samym początku mojej przygody z branżą IT, jedynym źródłem wiedzy
+              był internet. To właśnie wtedy chciałem stworzyć swoją pierwszą
+              stronę do nauki języków obcych. Jak to często bywa design znacznie
+              odbiegał od oczekiwań i choć nie byz zły jak na kogoś kto stwaia
+              pierwsze kroki w tej branży, to każdy kolejny był lepszy, przez co
+              strony zamiast być publikowane na serwerze trafiały do kosza. Tak
+              krok po kroku stworzyłem pare stron, aż do momentu wylądowania na
+              studiach na których i tak praktycznie musiałem się uczyć
+              samodzenielnie, z tą różnicą że zaczałem korzystać z kurswów ...
+            </p>
+            <div class="btns">
+              <a href="mailto:pz1996@gmail.com">
                 <div class="btn">
-                  <p>Hire me</p><img src="img/sent.svg" alt="hire_icon">
+                  <p>Hire me</p>
+                  <img src="img/sent.svg" alt="hire_icon" />
                 </div>
               </a>
-            <a href="cv/CV_Piotr_Zachoszcz.pdf">
+              <a href="cv/CV_Piotr_Zachoszcz.pdf">
                 <div class="btn">
-                  <p>Download CV </p> <img src="img/dow.svg" alt="download_icon">
+                  <p>Download CV</p>
+                  <img src="img/dow.svg" alt="download_icon" />
                 </div>
               </a>
-          </div>
-
-        </div>
-      </div>
-      <div class="desc">
-        <div class="presentation difrent">
-          <h2>Ania</h2>
-          <p>Mam na imię Ania. Skonczyłam studia na kierunku "Turystyka", a obecnie kontynuje studia na Zarządzaniu. Jak
-            widzisz powyższe studia nie mają za dużo wspólnego z branżą IT. Aby zacząc tworzyć strony, zaczełam
-            przerabiać online kursy z róznych żrodeł, a następnie wykorzystywać w praktyce nabytą do tej pory wiedzę.
-            Jestem
-            osobą kreatywną, lubię rysować, oraz mam poczucie stylu, podczas tworzenia layoutów lubie eksperymentować
-            dzięki czemu każdy z nich wygląda unikalnie. </p>
-          <div class="btns">
-            <a href="mailto:ag1999@gmail.com">
-              <div class="btn">
-                <p>Hire me</p><img src="img/sent.svg" alt="hire_icon">
-              </div>
-             </a>
-            <a href="cv/CV_Ania_green.pdf">
-              <div class="btn">
-                <p>Download CV </p> <img src="img/dow.svg" alt="download_icon">
-              </div>
-            </a>
+            </div>
           </div>
         </div>
-        <div class="photo" id="difrent">
-          <img src="img/ania_photo.png" alt="Piotrek_developer_photo">
-          <div class="cutter"></div>
+        <div class="desc">
+          <div class="presentation difrent">
+            <h2>Ania</h2>
+            <p>
+              Mam na imię Ania. Skonczyłam studia na kierunku "Turystyka", a
+              obecnie kontynuje studia na Zarządzaniu. Jak widzisz powyższe
+              studia nie mają za dużo wspólnego z branżą IT. Aby zacząc tworzyć
+              strony, zaczełam przerabiać online kursy z róznych żrodeł, a
+              następnie wykorzystywać w praktyce nabytą do tej pory wiedzę.
+              Jestem osobą kreatywną, lubię rysować, oraz mam poczucie stylu,
+              podczas tworzenia layoutów lubie eksperymentować dzięki czemu
+              każdy z nich wygląda unikalnie.
+            </p>
+            <div class="btns">
+              <a href="mailto:ag1999@gmail.com">
+                <div class="btn">
+                  <p>Hire me</p>
+                  <img src="img/sent.svg" alt="hire_icon" />
+                </div>
+              </a>
+              <a href="cv/CV_Ania_green.pdf">
+                <div class="btn">
+                  <p>Download CV</p>
+                  <img src="img/dow.svg" alt="download_icon" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="photo" id="difrent">
+            <img src="img/ania_photo.png" alt="Piotrek_developer_photo" />
+            <div class="cutter"></div>
+          </div>
         </div>
-
-      </div>
-    </section>
-    <footer>
-      <div class="concact">
-        <div class="mail">
-          <img src="img/sent.svg" alt="mail_icon">
-          <p>team@developers.pl</p>
+      </section>
+      <footer>
+        <div class="concact">
+          <div class="mail">
+            <img src="img/sent.svg" alt="mail_icon" />
+            <p>team@developers.pl</p>
+          </div>
+          <div class="localization">
+            <img src="img/map.svg" alt="map_icon" />
+            <p>Wrocław ul.Kamienna 31/50</p>
+          </div>
+          <div class="phone">
+            <img src="img/tel.svg" alt="phone_icon" />
+            <p>+ 48 502 727 000</p>
+          </div>
         </div>
-        <div class="localization">
-          <img src="img/map.svg" alt="map_icon">
-          <p>Wrocław ul.Kamienna 31/50</p>
+        <div class="iconss">
+          <a><img src="img/github.svg" alt="git_icon"/></a>
+          <a><img src="img/instagram.svg" alt="insta_icon"/></a>
+          <a><img src="img/facebook.svg" alt="facebook_icon"/></a>
         </div>
-        <div class="phone">
-          <img src="img/tel.svg" alt="phone_icon">
-          <p>+ 48 502 727 000</p>
-        </div>
-      </div>
-      <div class="iconss">
-        <a><img src="img/github.svg" alt="git_icon"></a>
-        <a><img src="img/instagram.svg" alt="insta_icon"></a>
-        <a><img src="img/facebook.svg" alt="facebook_icon"></a>
-      </div>
-      <p> &copy; Copyright develoopers 2019</p>
-      <!-- <hr> -->
-    </footer>
-  </div>
-</body>
-
+        <p>&copy; Copyright develoopers 2019</p>
+        <!-- <hr> -->
+      </footer>
+    </div>
+  </body>
 </html>
